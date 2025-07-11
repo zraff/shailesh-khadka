@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="display-4">Welcome to Zaddy's Cybersecurity Portfolio</h1>
+    <p class="lead">Showcasing my skills, tools, projects, and more.</p>
+
+    <hr class="my-4">
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <p class="card-text">Explore cybersecurity tools, scripts, and real-world projects I've built.</p>
+                    <a href="/projects/" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Blog</h5>
+                    <p class="card-text">Read technical breakdowns, CTF writeups, and tutorials I've written.</p>
+                    <a href="/blog/" class="btn btn-secondary">Read Blog</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Resume</h5>
+                    <p class="card-text">Take a look at my education, experience, certifications and more.</p>
+                    <a href="/resume/" class="btn btn-dark">See Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <a href="/contact/" class="btn btn-outline-dark btn-lg">Get In Touch</a>
+    </div>
+</div>
+{% endblock %}
